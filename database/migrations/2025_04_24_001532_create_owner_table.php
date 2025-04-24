@@ -25,8 +25,26 @@ return new class extends Migration
 
             $table->timestamps();
         });
+
+        schema::create('Establishment', function (Blueprint $table){
+            //TODO
+        });
+
+        Schema::create('Order', function (Blueprint $table){
+            //TODO
+        });
+
+        schema::create('MenuItems', function (Blueprint $table){
+            //TODO
+        });
+
+        schema::crete('OrderItems', function (Blueprint $table){
+            //TODO
+        });
     }
-        #TODO: rest of tables before migrategit
+
+
+
     /**
      * Reverse the migrations.
      */
