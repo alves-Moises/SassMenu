@@ -20,27 +20,31 @@ return new class extends Migration
             $table->unsignedBigInteger('establishment_id');
             $table->foreign('establishment_id')
                 ->references('id')
-                ->on('Establishment')
+                ->on('establishment')
                 ->onDelete('cascade');
 
             $table->timestamps();
         });
 
-        schema::create('Establishment', function (Blueprint $table){
-            //TODO
-        });
+        // schema::create('Establishment', function (Blueprint $table){
+        //     $table->id()->unique()->autoincrement(  );
+        //     $table->string('name');
+        //     $table->string('adress');
+        //     $table->string('tel');
+        //     $table->string('cnpj');
+        // });
 
-        Schema::create('Order', function (Blueprint $table){
-            //TODO
-        });
+        // Schema::create('Order', function (Blueprint $table){
+        //     //TODO
+        // });
 
-        schema::create('MenuItems', function (Blueprint $table){
-            //TODO
-        });
+        // schema::create('MenuItems', function (Blueprint $table){
+        //     //TODO
+        // });
 
-        schema::crete('OrderItems', function (Blueprint $table){
-            //TODO
-        });
+        // schema::crete('OrderItems', function (Blueprint $table){
+        //     //TODO
+        // });
     }
 
 
